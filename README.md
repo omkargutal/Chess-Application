@@ -1,12 +1,56 @@
-# React + Vite
+Chess Game Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, two-player chess game built with React, TypeScript, and Tailwind CSS. It features real-time scoring, timers, pawn promotion, check/checkmate detection, and a polished user interface with dark mode support.
+### Features
+	•	Fully functional chess game with standard rules.
+	•	Real-time move validation and highlighting.
+	•	Timer for each player with countdown.
+	•	Check, checkmate, stalemate, and draw detection.
+	•	Pawn promotion with user-selectable piece.
+	•	Undo and new game functionality.
+	•	Responsive UI using Tailwind CSS with custom theming.
+	•	Dark mode support with custom CSS variables.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation
+1.	Clone the repo:
+git clone <repository-url>
+cd <repository-folder>
 
-## Expanding the ESLint configuration
+2.	Install dependencies:
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.	Run the development server:
+npm run dev
+
+4.	Open your browser at `http://localhost:5173`
+
+
+### Usage
+	•	Click on a piece to select and view valid moves.
+	•	Click on a destination square to move the piece.
+	•	Pawn promotion modal appears when applicable.
+	•	Timer counts down per player’s turn.
+	•	Start a new game using the “New Game” button.
+
+
+### Project Structure
+	•	`src/` – Source files including React components and utilities.
+	•	`utils/chess-logic.ts` – Chess rules, move generation, and games state logic.
+	•	`components/` – UI components like board, modals, game status.
+	•	`index.css` – Tailwind CSS with custom theming and CSS variables.
+	•	`postcss.config.cjs` & `tailwind.config.js` – Tailwind CSS and PostCSS configurations.
+	•	`App.tsx` – Main React component managing game state and logic.
+
+
+### Technology Stack
+	•	React 19 with TypeScript
+	•	Tailwind CSS 4
+	•	Vite for build and dev server
+	•	PostCSS with `@tailwindcss/postcss` plugin
+	•	Radix UI components (optional UI primitives)
+	•	Motion for animation effects
+
+
+
+
